@@ -1,0 +1,233 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.navbar-default {
+  border-radius: 0;
+  margin-bottom: 0;
+  border: 0;
+  .container {
+    width: 100vw;
+    .navbar-header {
+      height: $header-height;
+      width: 20%;
+      img {
+        display: block;
+        height: 55%;
+        width: auto;
+      }
+      .navbar-toggle {
+        .icon-bar {
+          background-color: white;
+        }
+        &:hover, &:focus {
+          background-color: transparent;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .navbar-nav {
+      height: $header-height;
+      li > a {
+        font-size: 12px;
+        line-height: 17px;
+        color: white;
+        padding: 10px 0 7px;
+        margin: 0 10px;
+        background-color: transparent;
+        &:hover, &:focus {
+          background-color: transparent;
+          color: white;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      &.navbar-right {
+        li {
+          a {
+            padding-right: 0;
+            padding-left: 0;
+            padding-bottom: 5px;
+          }
+          &:first-child {
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ds-header {
+  background-color: $primary;
+  position: sticky;
+
+  .item {
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    text-align: center;
+    height: 100%;
+    a {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 28px;
+        padding-top: 3px;
+      }
+    }
+
+    // .community { width: 39px; }
+    .events { width: 26px; }
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+
+    .bell {
+      background-color: transparent;
+      opacity: 0.5;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+
+      i {
+        color: white !important;
+        font-size: 25px !important;
+      }
+    }
+    .popup-profile {
+      font-size: 11px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .name-avatar {
+        color: $primary;
+        width: 35px;
+        height: 35px;
+        background-color: $slight-grey;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .user {
+      overflow: visible;
+      width: 40px;
+      height: 40px;
+    }
+    .divider {
+      background-color: white;
+      opacity: 0.5;
+      width: 2px;
+      height: calc(#{$header-height} - 30px);
+    }
+    .search-nav {
+      height: $header-height;
+    }
+    .search-form {
+      max-width: 200px;
+      min-width: 100px;
+      .search-group {
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+        border-radius: 20px;
+        border: none;
+        height: 35px;
+        overflow: hidden;
+        opacity: 0.8;
+        input {
+          color: white;
+          background-color: transparent;
+          height: 100%;
+          &::placeholder {
+            color: white;
+            font-weight: 100;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .search-icon {
+          background-color: transparent;
+          i {
+            color: white !important;
+            font-size: 16px !important;
+            opacity: 1 !important;
+          }    
+        }
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sxl) {
+  .container {
+    .navbar-header {
+      width: auto !important;
+    }
+    .navbar-nav {
+      .item {
+        margin-left: 0;
+        margin-right: 0;
+        a {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.popover {
+  &.profile-popup {
+    left: auto !important;
+    right: 100px;
+    width: 260px;
+    .arrow {
+      display: none;
+    }
+    .item {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .item-label {
+        font-size: 13px;
+        color: $primary;
+        .badge {
+          color: white;
+          padding: 3px 10px;
+          font-size: 9px;
+          border-radius: 20px;
+          margin-left: 10px;
+          font-weight: 300;
+          &.premium {
+            background-color: $premium;
+          }
+          &.standard {
+            background-color: $primary;
+          }
+          &.basic {
+            background-color: $basic;
+          }
+        }
+      }
+    }
+  }
+}

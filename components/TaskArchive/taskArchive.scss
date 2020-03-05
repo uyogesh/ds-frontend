@@ -1,0 +1,24 @@
+@import '../../layouts/Dashboard/theme.scss';
+.archive-task{
+  .task-archive {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #f5f5f5, 0 0 0 1px #f5f5f5 !important;
+    border-color: transparent !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 4px;
+
+    .fl {
+      float: left;
+    }
+    .w-100{
+      width: 100%;
+    }
+  }
+}
+.archive-task:nth-child(even){
+  padding-left:8px !important;
+}
+.archive-task:nth-child(odd){
+  padding-right:8px !important;
+}

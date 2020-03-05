@@ -1,0 +1,47 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.textcenter {
+  text-align: center;
+
+  p {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+}
+
+p {
+  color: $light-grey;
+  margin: 0px;
+  font-size: 12px;
+}
+
+.wth100 {
+  width: 100%;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+.svg-icon circle {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.card-selected {
+  background-color: #e5eef8;
+  color: #376caf !important;
+
+  p,
+  span {
+    color: #376caf !important;
+  }
+}

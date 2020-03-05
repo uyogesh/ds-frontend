@@ -1,0 +1,85 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.career-map {
+  .header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    .right {
+      float: right;
+    }
+  }
+  .content {
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px;
+    height: 170px;
+    .ovfhidden{
+      overflow: hidden;
+    }
+    .line {
+      background-color: white;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &.active {
+        padding-left: 13px;
+      }
+    }
+    .circle {
+      border: 1px solid #969faa;
+      border-radius: 12px;
+      padding-left: 2px;
+      padding-top: 1.5px;
+      width: 18px;
+      height: 18px;
+    }
+    .connection {
+      background-color: #969faa;
+      position: absolute;
+      left: 21px;
+      top: 15px;
+      width: 2px;
+      height: 20px;;
+      &.active {
+        top: 18px;
+      }
+    }
+    .rc-steps {
+      .rc-steps-item {
+        height: 30px;
+        .rc-steps-item-icon {
+          border-radius: 20px;
+          font-size: 10px;
+          line-height: 20px;
+          width: 20px;
+          height: 20px;
+        }
+        .rc-steps-item-content {
+          .rc-steps-item-title {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+        .rc-steps-item-tail {
+          left: 10px;
+          top: 1px;
+          padding: 20px 0 0 0;
+        }
+        &.rc-steps-item-process {
+          .rc-steps-item-icon {
+            background-color: $primary;
+            border-color: $primary;
+          }
+        }
+        &.rc-steps-item-finish {
+          .rc-steps-item-icon {
+            border-color: $primary;
+            .rc-steps-icon {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

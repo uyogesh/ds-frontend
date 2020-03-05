@@ -1,0 +1,52 @@
+.hrStyle {
+  height: 10px;
+  background-color: lightgrey;
+  color: lightgrey;
+  border: none;
+  margin: 0px;
+}
+.footerClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttonStyleTaskDetail {
+  width: 20%;
+  border-radius: 20px !important;
+}
+.taskDetailStyle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10%;
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 450px;
+      margin: auto;
+    }
+  }
+}
+.modal {
+  .modal-header {
+    padding: 10px;
+  }
+  .modal-body {
+    padding: 10px;
+  }
+  .modal-footer {
+    padding: 10px;
+  }
+}
+.rowDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.commentDiv {
+  height: 140px;
+  overflow-y: scroll;
+}
+.fileLabelStyle {
+  display: flex;
+  margin-left: 10px;
+}

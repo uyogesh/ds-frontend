@@ -1,0 +1,11 @@
+.archive-status {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+
+  .space {
+    flex: 1;
+  }
+}

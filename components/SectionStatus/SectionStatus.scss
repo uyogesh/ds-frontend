@@ -1,0 +1,17 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.mt-2 {
+  margin-top: 2px;
+}
+
+.wth100 {
+  width: 100%;
+}
+.colItem {
+  width: 25%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}

@@ -1,0 +1,68 @@
+.hrStyle {
+  height: 10px;
+  background-color: lightgrey;
+  color: lightgrey;
+  border: none;
+  margin: 0px;
+}
+.footerClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttonStyleApproveDecline {
+  width: 20%;
+  border-radius: 20px !important;
+  margin-right: 10%;
+}
+.modalSpan {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.modal {
+  .modal-header-approval {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+  .modal-body-approval {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+  .modal-footer-approval {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+}
+.rowDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+}
+.rowDivButton {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  justify-content: center;
+}
+.imageDiv {
+  margin: 5px;
+}
+.imagePlaceholder {
+  background-color: lightgrey;
+  width: 50px;
+  height: 50px;
+}
+.buttonStyleApproval {
+  width: 20%;
+  border-radius: 20px !important;
+}
+.spanStyle {
+  color: black;
+  font-weight: 600;
+}

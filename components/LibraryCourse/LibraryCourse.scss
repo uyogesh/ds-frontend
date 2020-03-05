@@ -1,0 +1,38 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.library-course {
+  background-color: white;
+  padding: 10px;
+  .items {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 15px 20px;
+    &.active {
+      background-color: $light-blue;
+    }
+    .item-content {
+      display: flex;
+      align-items: center;
+      .type-name {
+        margin-left: -10px;
+        font-size: 12px;
+      }
+    }
+    &:hover {
+      background-color: $light;
+      text-decoration: none;
+    }
+  }
+  .sub-course {
+    background-color: $light-blue;
+  }
+
+  .super-treeview > div > .super-treeview-node > .super-treeview-node-content > .super-treeview-triangle-btn-right {
+    margin-top: 4px;
+  }
+  .super-treeview > div > .super-treeview-node > .super-treeview-children-container {
+    border-left: none;
+  }
+}

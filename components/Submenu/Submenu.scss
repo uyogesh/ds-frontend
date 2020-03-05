@@ -1,0 +1,20 @@
+.list-group {
+  background-color: #376caf;
+  border-radius: 20px;
+  color: #eef0f4;
+  font-size: 12px;
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid #c1c2c5;
+  }
+}
+.list-group-item {
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+  padding: 5px 10px;
+}

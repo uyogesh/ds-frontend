@@ -1,0 +1,15 @@
+@import '../../../../layouts/Dashboard/theme.scss';
+
+
+  .submit {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .btn {
+      background-color: $primary;
+      border: 1px solid $white;
+      border-radius: 20px;
+      padding: 10px 15px;
+    }
+  }
+
+ 

@@ -1,0 +1,11 @@
+@import '../../../layouts/Dashboard/theme.scss';
+
+.career {
+  @media screen and (max-width: $screen-sm) {
+    .map-wrapper {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../containers/App/theme.scss';
+
+.library-pagination {
+  box-shadow: 0 1px 3px 0 #f5f5f5, 0 0 0 1px #f5f5f5 !important;
+  border-color: transparent !important;
+  .right {
+    float: right;
+  }
+  
+  .ui.inline.dropdown {
+    color: $blue;
+  }
+  
+  .pages {
+    padding: 3px;
+  }
+  
+  .pages-left {
+    padding-left: 3px;
+  }  
+}

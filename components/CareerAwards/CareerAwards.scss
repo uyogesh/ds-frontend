@@ -1,0 +1,20 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.career-awards {
+  margin-top: 15px;
+  .header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .content {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+
+    .my-goal {
+      border-bottom: 1px solid $slight-grey;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.dev-reports {
+  padding: 15px;
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    i {
+      margin-top: 3px;
+    }
+  }
+  .no-left {
+    padding-left: 0;
+  }
+  .no-right {
+    padding-right: 0;
+  }
+}

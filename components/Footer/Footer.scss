@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(228, 2%, 40%);
+  color: white;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .controls {
+    display: flex;
+    padding-right: 240px;
+
+    .buttons {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  }
+}

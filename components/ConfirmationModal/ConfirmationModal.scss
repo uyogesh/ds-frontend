@@ -1,0 +1,48 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.confirmationModal {
+  .modal-header {
+    padding: 10px;
+  }
+  .modal-body {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .label {
+      color: #969faa;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .form-control {
+      height: 24px;
+    }
+  }
+  .modal-footer {
+    padding: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 460px;
+      margin-top: 25%;
+    }
+  }
+}
+
+.buttontStyle {
+  background-color: #c1c2c5;
+  border-radius: 20px;
+  width: 16%;
+  height: 34px;
+  color: $white;
+}
+.buttontActiveStyle {
+  background-color: $main-blue;
+  border-radius: 20px;
+  width: auto;
+  height: 34px;
+  color: $white;
+}
+*:focus {
+  outline: 0 !important;
+}

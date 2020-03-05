@@ -1,0 +1,57 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.textcenter {
+  text-align: center;
+}
+.plr5 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.mg0auto {
+  margin: 0 auto;
+}
+
+p {
+  color: $light-grey;
+  margin: 0px;
+  font-size: 12px;
+}
+.completed {
+  color: $light-grey;
+}
+.incomplete {
+  color: black !important;
+}
+.textbold {
+  font-weight: bold;
+}
+.wth100 {
+  width: 100%;
+}
+.w-35px {
+  width: 35px;
+}
+.w-20px {
+  width: 20px;
+}
+.svg-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+.svg-icon circle {
+  stroke: black;
+  stroke-width: 1;
+}
+.descriptionStyle {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  color: black;
+}

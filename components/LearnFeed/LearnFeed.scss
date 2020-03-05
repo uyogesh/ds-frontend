@@ -1,0 +1,209 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.learn-feed {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #f5f5f5, 0 0 0 1px #f5f5f5 !important;
+  padding: 20px;
+
+  .media {
+    .media-left {
+      .grid-card-top {
+        .course-top-title {
+          width: calc(100% - 40px);
+        }
+      }
+      .image-container {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .feed-description {
+        height: 160px;
+        overflow: hidden;
+      }
+      &.completed {
+        .course-title {
+          p:last-child {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+    .body {
+      .mheader {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 15px 10px;
+        p {
+          margin-left: 0;
+          margin-bottom: 0;
+          .label {
+            color: #969faa;
+            font-size: 13px;
+            font-family: 'Roboto';
+            font-weight: 100;
+            text-transform: none;
+          }
+          .value {
+            font-size: 18px !important;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+        }
+      }
+      .mcontent {
+        height: 340px;
+        overflow: auto;
+      }
+    }
+  }
+  .fields {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    border: 1px solid #c3c7cc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    height: 80px;
+
+    .fields-status {
+      width: 30px;
+    }
+
+    .fields-content {
+      margin-left: 10px;
+      > span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  // list mode style
+  &.list-mode {
+    margin-top: 5px !important;
+    .media {
+      cursor: pointer;
+      .media-left {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 230px) !important;
+        .course-status {
+          display: block;
+          width: 30px;
+        }
+        .image-container {
+          padding: 10px 20px 10px 10px;
+          display: flex;
+          height: 100px;
+          width: 180px;
+        }
+        .feed-description {
+          padding-top: 0 !important;
+          height: 125px;
+          width: calc(100% - 150px);
+          .course-title {
+            i {
+              display: none;
+            }
+            p {
+              margin-bottom: 0 !important;
+            }
+          }
+          .due-date {
+            width: 80px;
+            p {
+              margin-bottom: 0 !important;
+              color: #969faa;
+              strong {
+                font-weight: normal;
+              }
+            }
+          }
+          .description {
+            height: 60px;
+            width: calc(100% - 80px);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+        &.completed {
+          p {
+            color: #969faa !important;
+          }
+        }
+      }
+      .body {
+        max-width: 230px;
+        .mcontent {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .learn-feed {
+    .media {
+      .media-left {
+        width: 66.66666667%;
+      }
+      .body {
+        width: 33.33333333%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .learn-feed {
+    .media {
+      .media-left {
+        .grid-card-top {
+          .course-top-title {
+            display: block !important;
+            .due-date {
+              display: flex;
+              margin-top: 10px;
+              p {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .learn-feed {
+    .media {
+      .media-left {
+        .feed-description {
+          height: auto;
+        }
+      }
+      .body {
+        .mcontent {
+          height: auto;
+          max-height: 340px;
+        }
+      }
+    }
+    &.list-mode {
+      .media {
+        .media-left {
+          width: 100% !important;
+        }
+        .body {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+}

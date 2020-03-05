@@ -1,0 +1,51 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.learn-pagination {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #f5f5f5, 0 0 0 1px #f5f5f5 !important;
+  border-color: transparent !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+
+  .right {
+    float: right;
+  }
+
+  .pages {
+    padding: 3px;
+    &.active {
+      text-decoration: underline;
+      &:focus {
+        outline: none;
+        text-decoration: underline;
+      }
+    }
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  .pages-left {
+    padding-left: 3px;
+    &.active {
+      text-decoration: underline;
+      &:focus {
+        outline: none;
+        text-decoration: underline;
+      }
+    }
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  #status {
+    &:hover, &:focus {
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+}

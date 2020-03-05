@@ -1,0 +1,29 @@
+@import '../../containers/App/theme.scss';
+
+.performance-row {
+  display: flex;
+  box-shadow: 0 1px 3px 0 #f5f5f5, 0 0 0 1px #f5f5f5 !important;
+  border-color: transparent !important;
+  margin-bottom: 4px;
+
+  .status {
+    color: #969faa !important;
+    font-size: 12px;
+    width: 60px;
+  }
+  .score {
+    display: flex;
+    color: #969faa !important;
+    font-size: 12px;
+    justify-content: space-between;
+    width: 100px;
+  }
+  .others {
+    color: #969faa !important;
+    font-size: 12px;
+    width: 100px;
+  }
+  .space {
+    flex: 1,
+  }
+}

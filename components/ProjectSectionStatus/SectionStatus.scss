@@ -1,0 +1,19 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.textcenter {
+    text-align: center;
+
+p {
+    color: $light-grey;
+    margin: 0px;
+    font-size: 12px;
+  }
+}
+
+.mt-2 {
+    margin-top: 2px;
+}
+
+.wth100 {
+    width: 100%;
+}

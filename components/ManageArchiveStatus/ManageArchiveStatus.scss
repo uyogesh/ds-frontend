@@ -1,0 +1,16 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.manage-archive-status {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 4px;
+
+  .space {
+    flex: 1;
+  }
+  .fright {
+    right: 15px;
+    position: absolute;
+  }
+}

@@ -1,0 +1,121 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.library-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  position: relative;
+
+  .lib-content {
+    flex: 1;
+    background-color: white;
+    cursor: pointer;
+    padding: 20px;
+    .media {
+      .media-left {
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
+
+  .add {
+    float: right;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    cursor: pointer;
+    width: 110px;
+
+    span {
+      color: #376CAF;
+    }
+
+    &.active {
+      background-color: #376CAF;
+      i {
+        color: white !important;
+      }
+      span {
+        color: white;
+      }
+    }
+    &:hover, &:active, &:focus {
+      background-color: #376CAF;
+      i {
+        color: white !important;
+      }
+      span {
+        color: white;
+      }
+    }
+  }
+
+  .add-modal {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: -2px 2px 10px 4px rgba(0,0,0,0.1);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 110px;
+    width: 200px;
+    height: 250px;
+    z-index: 9;
+    .course {
+      border-bottom: 1px solid #ccc;
+    }
+    .assign {
+      margin-top: 20px;
+    }
+    .assign-box {
+      display: inline-flex;
+      i {
+        line-height: 20px;
+      }
+      button {
+        border: none;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        .caret {
+          display: none;
+        }
+      }
+    }
+    .due {
+      margin-top: 20px;
+    }
+    .date-box {
+      display: inline-flex;
+      input {
+        border: none;
+        line-height: 24px;
+        margin-left: 5px;
+        width: 120px;
+        &:focus {
+          outline: none;
+        }
+      }
+      i {
+        line-height: 24px;
+      }
+    }
+    .save {
+      background-color: $primary;
+      border-radius: 15px;
+      bottom: 20px;
+      color: white;
+      font-size: 12px;
+      padding-left: 30px;
+      padding-right: 30px;
+      position: absolute;
+      height: 30px;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import '../../../layouts/Dashboard/theme.scss';
+
+.dev-learn {
+    background-color: #f5f6f7;
+}
+
+.section-container {
+
+}
+
+.flx-col{
+    flex-direction: column;
+}
+.center{
+    align-self: center;
+    justify-content: center;
+}
+.txt-center{
+    text-align: center;
+}
+.section-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flx-row {
+    display:flex;
+    flex-direction: row;
+}
+.jst-space-between{
+    justify-content: space-between;
+}
+
+.change-hover{
+    padding-bottom: 20px;
+
+}
+.change-hover:hover{
+    background-color: #e5eef8;
+    color: #376CAF !important;
+
+    p,span{
+        color: #376CAF !important;
+    }
+}
+.color-sec{
+    color:#969faa;
+    font-weight: bold;
+}
+
+.status-heading{
+    align-self: flex-start;
+}
+
+.btn-no-back{
+    background-color: transparent !important;
+    color: #376CAF;
+}
+.project-header-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.mng-dropdown{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.flx{
+    display: flex;
+}
+.flx-col {
+    flex-direction: column;
+}
+
+.flx-1{
+    flex:1;
+}
+
+.al-center{
+    align-self: center;
+}
+
+.project-status {
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 10px;
+    background: transparent;
+}

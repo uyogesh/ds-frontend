@@ -1,0 +1,41 @@
+@import '../../layouts/Dashboard/theme.scss';
+
+.textcenter {
+    text-align: center;
+}
+.dsply-content {
+    display: contents;
+}
+p {
+    color: $light-grey;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.wth100 {
+    width: 100%;
+}
+
+.svg-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: black;
+}
+
+.svg-icon circle {
+    stroke: black;
+    stroke-width: 1;
+}
+
+.pr-5{
+    padding-right: 5px;
+}
+
+.grey{
+    color:#969faa;
+}

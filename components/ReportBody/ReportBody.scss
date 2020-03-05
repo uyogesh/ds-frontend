@@ -1,0 +1,56 @@
+.txt-center{
+    text-align: center;
+}
+.flx-1{
+    flex:1;
+    font-size: 12px;
+    line-height: initial;
+}
+.title-text-center{
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.flx{
+    display: flex;
+}
+.flx-col{
+    flex-direction: column;
+}
+.center{
+    align-self: center;
+    justify-content: center;
+}
+.txt-center{
+    text-align: center;
+}
+.section-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.al-center{
+    align-self: center;
+}
+.flx-row {
+    display:flex;
+    flex-direction: row;
+}
+.jst-space-between{
+    justify-content: space-between;
+}
+.btn-no-back{
+    background-color: transparent !important;
+    color: #376CAF;
+}
+.colored-row{
+    height: 50px;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.colored-row.colored{
+    background: #f7f8fc !important;
+}

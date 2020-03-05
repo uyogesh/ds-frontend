@@ -1,0 +1,27 @@
+.library-status {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 2px;
+
+  .space {
+    flex: 1;
+  }
+
+  .selected {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+  .close {
+    width: 40px;
+    height: 40px;
+  }
+
+  > div {
+    &:last-child {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

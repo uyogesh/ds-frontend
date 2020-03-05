@@ -1,0 +1,32 @@
+.career-slider {
+  .item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+
+    .line {
+      .form-control {
+        text-align: center;
+      }
+    }
+  }
+  .slick-slider {
+    .slick-prev {
+      left: 100px;
+      top: 40px;
+      z-index: 9;
+      &::before {
+        display: none;
+      }
+    }
+    .slick-next {
+      right: 100px;
+      top: 40px;
+      z-index: 9;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

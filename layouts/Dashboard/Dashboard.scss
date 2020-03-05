@@ -1,0 +1,561 @@
+@import './theme.scss';
+
+.dashboard {
+  width: 100vw;
+  height: 98vh;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.has-header {
+  height: calc(98vh - #{$header-height}) !important;
+  overflow: auto;
+}
+.has-sidebar {
+  width: calc(100% - #{$sidebar-width}) !important;
+  @media screen and (max-width: $screen-slg) {
+    width: 100% !important;
+  }
+}
+.left-sidebar {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  padding-left: 20px;
+  @media screen and (max-width: $screen-sm) {
+    position: initial;
+    margin-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+.has-left-sidebar {
+  margin-left: 320px;
+  margin-right: 10px;
+  @media screen and (max-width: $screen-sm) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+// Font Styles
+.dsl-l12 {
+  color: $slight-grey;
+  font-size: 12px;
+  line-height: 16px;
+}
+.dsl-l14 {
+  color: $slight-grey;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.dsl-d11 {
+  color: $light-grey;
+  font-size: 11px;
+  line-height: 14px;
+}
+.dsl-d12 {
+  color: $light-grey;
+  font-size: 12px;
+  line-height: 16px;
+}
+.dsl-d13 {
+  color: $light-grey;
+  font-size: 13px;
+  line-height: 18px;
+}
+.dsl-d14 {
+  color: $light-grey;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.dsl-b10 {
+  color: $dark-grey;
+  font-size: 10px;
+  line-height: 14px;
+}
+.dsl-b11 {
+  color: $dark-grey;
+  font-size: 11px;
+  line-height: 14px;
+}
+.dsl-b12 {
+  color: $dark-grey;
+  font-size: 12px;
+  line-height: 16px;
+}
+.dsl-b14 {
+  color: $dark-grey;
+  font-size: 14px;
+  line-height: 19px;
+}
+.dsl-b16 {
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 21px;
+}
+.dsl-b18 {
+  color: $dark-grey;
+  font-size: 18px;
+  line-height: 23px;
+}
+.dsl-b20 {
+  color: $dark-grey;
+  font-size: 20px;
+  line-height: 24px;
+}
+.dsl-b24 {
+  color: $dark-grey;
+  font-size: 24px;
+  line-height: 29px;
+}
+.dsl-b27 {
+  color: $dark-grey;
+  font-size: 27px;
+  line-height: 32px;
+}
+.dsl-b50 {
+  color: $dark-grey;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.dsl-p12 {
+  color: $primary;
+  font-size: 12px;
+  line-height: 16px;
+}
+.dsl-p14 {
+  color: $primary;
+  font-size: 14px;
+  line-height: 19px;
+}
+.dsl-p16 {
+  color: $primary;
+  font-size: 16px;
+  line-height: 21px;
+}
+.dsl-p18 {
+  color: $primary;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.dsl-w12 {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+// Button styles
+.dsb {
+  border: none;
+  &:focus, &:hover {
+    box-shadow: 0.5px 0.5px 0 0 #888888;
+    outline: none;
+  }
+}
+.btn-rounded {
+  border-radius: 100px;
+}
+.ds-btn {
+  color: $white;
+  border-radius: 50px;
+  padding: 7px 25px;
+  &:hover {
+    background-color: $sub;
+  }
+}
+
+// global padding
+.pl-0, .px-0 {
+  padding-left: 0 !important;
+}
+.pr-0, .px-0 {
+  padding-right: 0 !important;
+}
+.pb-0, .py-0 {
+  padding-bottom: 0 !important;
+}
+.pt-0, .py-0 {
+  padding-top: 0 !important;
+}
+.p-0 {
+  padding: 0!important;
+}
+
+.pl-5, .px-5 {
+  padding-left: 5px !important;
+}
+.pr-5, .px-5 {
+  padding-right: 5px !important;
+}
+.pb-5, .py-5 {
+  padding-bottom: 5px !important;
+}
+.pt-5, .py-5 {
+  padding-top: 5px !important;
+}
+.p-5 {
+  padding: 5px !important;
+}
+
+.pl-10, .px-10 {
+  padding-left: 10px !important;
+}
+.pr-10, .px-10 {
+  padding-right: 10px !important;
+}
+.pb-10, .py-10 {
+  padding-bottom: 10px !important;
+}
+.pt-10, .py-10 {
+  padding-top: 10px !important;
+}
+.p-10 {
+  padding: 10px !important;
+}
+
+.pl-20, .px-20 {
+  padding-left: 20px !important;
+}
+.pr-20, .px-20 {
+  padding-right: 20px !important;
+}
+.pb-20, .py-20 {
+  padding-bottom: 20px !important;
+}
+.pt-20, .py-20 {
+  padding-top: 20px !important;
+}
+.p-20 {
+  padding: 20px !important;
+}
+
+.pl-30, .px-30 {
+  padding-left: 30px !important;
+}
+.pr-30, .px-30 {
+  padding-right: 30px !important;
+}
+.pb-30, .py-30 {
+  padding-bottom: 30px !important;
+}
+.pt-30, .py-30 {
+  padding-top: 30px !important;
+}
+.p-30 {
+  padding: 30px !important;
+}
+
+
+// global margin
+.ml-0, .mx-0 {
+  margin-left: 0 !important;
+}
+.mr-0, .mx-0 {
+  margin-right: 0 !important;
+}
+.mb-0, .my-0 {
+  margin-bottom: 0 !important;
+}
+.mt-0, .my-0 {
+  margin-top: 0 !important;
+}
+.m-0 {
+  margin: 0!important;
+}
+.ml-auto, .mx-auto {
+  margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+  margin-left: auto !important;
+}
+
+.ml-10, .mx-10 {
+  margin-left: 10px !important;
+}
+.mr-10, .mx-10 {
+  margin-right: 10px !important;
+}
+.mb-10, .my-10 {
+  margin-bottom: 10px !important;
+}
+.mt-10, .my-10 {
+  margin-top: 10px !important;
+}
+.m-10 {
+  margin: 10px !important;
+}
+
+.ml-15, .mx-15 {
+  margin-left: 15px !important;
+}
+.mr-15, .mx-15 {
+  margin-right: 15px !important;
+}
+.mb-15, .my-15 {
+  margin-bottom: 15px !important;
+}
+.mt-15, .my-15 {
+  margin-top: 15px !important;
+}
+.m-15 {
+  margin: 15px !important;
+}
+
+.ml-20, .mx-20 {
+  margin-left: 20px !important;
+}
+.mr-20, .mx-20 {
+  margin-right: 20px !important;
+}
+.mb-20, .my-20 {
+  margin-bottom: 20px !important;
+}
+.mt-20, .my-20 {
+  margin-top: 20px !important;
+}
+.m-20 {
+  margin: 20px !important;
+}
+
+.ml-30, .mx-30 {
+  margin-left: 30px !important;
+}
+.mr-30, .mx-30 {
+  margin-right: 30px !important;
+}
+.mb-30, .my-30 {
+  margin-bottom: 30px !important;
+}
+.mt-30, .my-30 {
+  margin-top: 30px !important;
+}
+.m-30 {
+  margin: 30px !important;
+}
+
+
+// flex style
+.d-flex {
+  display: flex !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.justify-content-center {
+  display: flex !important;
+  justify-content: center !important;
+}
+.justify-content-between {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.justify-content-end {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+.align-items-center {
+  display: flex !important;
+  align-items: center !important;
+}
+.align-items-start {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+.d-none {
+  display: none !important;
+}
+
+
+// border style
+.border-0 {
+  border: none !important;
+}
+.border-5 {
+  border-radius: 5px !important;
+}
+.border-top, .border {
+  border-top: 1px solid $slight-grey;
+}
+.border-right, .border {
+  border-right: 1px solid $slight-grey;
+}
+.border-bottom, .border {
+  border-bottom: 1px solid $slight-grey;
+}
+.border-left, .border {
+  border-left: 1px solid $slight-grey;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+
+// height & width style
+.h-100 {
+  height: 100% !important;
+}
+.h-50 {
+  height: 50% !important;
+}
+.h-100vh {
+  height: 100vh !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+
+
+// background color style
+.bg-main {
+  background-color: #e9ebee;
+}
+.bg-light {
+  background-color: $light;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.bg-white {
+  background-color: $white !important;
+}
+.bg-light-grey {
+  background-color: $light-grey !important;
+}
+
+
+// color style
+.main-blue {
+  color: $primary;
+}
+.light-grey {
+  color: $light-grey;
+}
+.color-white {
+  color: white;
+}
+
+
+// overlay style
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-color: #000;
+}
+
+
+// position style
+.position-static {
+  position: static;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+.position-sticky {
+  position: sticky;
+}
+
+
+// opacity & deactivate style
+.deactivate, .opacity-5 {
+  opacity: 0.5 !important;
+}
+
+
+// cursor style
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+
+// overflow style
+.overflow-scroll, .overflow-scroll-y {
+  overflow-y: scroll;
+}
+.overflow-scroll, .overflow-scroll-x {
+  overflow-x: scroll;
+}
+.overflow-hidden, .overflow-hidden-y {
+  overflow-y: hidden;
+}
+.overflow-hidden, .overflow-hidden-x {
+  overflow-x: hidden;
+}
+.overflow-auto, .overflow-auto-x {
+  overflow-x: auto
+}
+.overflow-auto, .overflow-auto-y {
+  overflow-y: auto
+}
+
+
+// text style
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-line-none {
+  text-decoration: none;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// modal style
+.modal-dialog-centered {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,71 @@
+.hrStyle {
+  height: 10px;
+  background-color: lightgrey;
+  color: lightgrey;
+  border: none;
+  margin: 0px;
+}
+.footerClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttonStyleApproveDecline {
+  width: 20%;
+  border-radius: 20px !important;
+  margin-right: 10%;
+}
+.approvalStyle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10%;
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 450px;
+      margin: auto;
+    }
+  }
+}
+.modal {
+  .modal-header-approval {
+    padding: 10px;
+  }
+  .modal-body-approval {
+    padding: 10px;
+  }
+  .modal-footer-approval {
+    padding: 10px;
+  }
+}
+.rowDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+}
+.rowDivButton {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  justify-content: center;
+}
+.imageDiv {
+  margin: 5px;
+}
+.imagePlaceholder {
+  background-color: lightgrey;
+  width: 50px;
+  height: 50px;
+}
+.buttonStyleApproval {
+  width: 20%;
+  border-radius: 20px !important;
+}
+.spanStyle {
+  color: black;
+  font-weight: 600;
+}
+.commentDiv {
+  height: 140px;
+  overflow-y: scroll;
+}

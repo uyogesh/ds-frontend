@@ -1,0 +1,23 @@
+@import '../../../layouts/Dashboard/theme.scss';
+
+.learn-child-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  .lock-badge {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    min-width: 250px;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: $white;
+    font-size: 16px;
+    background-color: $dark-grey;
+  }
+  .lock-container {
+    height: calc(100% - 140px);
+  }
+}
